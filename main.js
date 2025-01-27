@@ -92,6 +92,7 @@ function result(num1, num2, operator) {
       }
       break;
   }
+  answer = parseFloat(answer.toFixed(2));
   return answer;
 }
 
