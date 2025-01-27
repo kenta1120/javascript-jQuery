@@ -1,0 +1,48 @@
+#display-screen {
+  background-color: black;
+  width: 400px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+table {
+  position: relative;
+  width: 400px;
+  margin-left: 10px;
+}
+
+.buttonNumber {
+  font-size: 20px;
+  width: 95px;
+  height: 35px;
+  border-radius: 5px;
+}
+
+
+#clear {
+    position: absolute;
+    left: 3px;
+    bottom: -35px;
+    width: 195px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#equal {
+  position: absolute;
+  left: 203px;
+  bottom: -35px;
+  width: 195px;
+  height: 35px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.number-style {
+  display: flex;
+  color: white;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 30px;
+}

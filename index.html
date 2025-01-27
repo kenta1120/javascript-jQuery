@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>電卓</title>
+</head>
+<body>
+  <div id="display-screen"></div>
+  <table>
+    <tr id="first-row">
+      <td><button type="button" class="buttonNumber" onclick="numbers(7)">7</button></td>
+      <td><button type="button" class="buttonNumber" onclick="numbers(8)">8</button></td>
+      <td><button type="button" class="buttonNumber" onclick="numbers(9)">9</button></td>
+      <td><button type="button" class="buttonNumber" onclick="calculate('+')">+</button></td>
+    </tr>
+
+    <tr id="second-row">
+      <td><button type="button" class="buttonNumber" onclick="numbers(4)">4</button></td>
+      <td><button type="button" class="buttonNumber" onclick="numbers(5)">5</button></td>
+      <td><button type="button" class="buttonNumber" onclick="numbers(6)">6</button></td>
+      <td><button type="button" class="buttonNumber" onclick="calculate('-')">-</button></td>
+    </tr>
+
+    <tr id="third-row">
+      <td><button type="button" class="buttonNumber" onclick="numbers(1)">1</button></td>
+      <td><button type="button" class="buttonNumber" onclick="numbers(2)">2</button></td>
+      <td><button type="button" class="buttonNumber" onclick="numbers(3)">3</button></td>
+      <td><button type="button" class="buttonNumber" onclick="calculate('*')">*</button></td>
+    </tr>
+
+    <tr id="fourth-row">
+      <td><button type="button" class="buttonNumber" onclick="numbers(0)">0</button></td>
+      <td><button type="button" class="buttonNumber" onclick="numbers('00')">00</button></td>
+      <td><button type="button" class="buttonNumber" onclick="numbers('.')">.</button></td>
+      <td><button type="button" class="buttonNumber" onclick="calculate('/')">/</button></td>
+    </tr>
+
+    <tr id="fifth-row">
+      <td><button type="button" id="clear" onclick="clearscreen()">AC</button></td>
+      <td><button type="button" id="equal" onclick="equal()">=</button></td>
+    </tr>
+    <script src="main.js"></script>
+  </table>
+</body>
+</html>
